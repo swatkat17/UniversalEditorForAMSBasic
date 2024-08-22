@@ -195,5 +195,36 @@
         "label": "Reference"
       }
     ]
+  },
+  {
+    "id": "table",
+    "fields": [
+      {
+        "component": "table",
+        "name": "rows",
+        "label": "Rows",
+        "valueType": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "cells": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      {
+        "component": "table",
+        "name": "columns",
+        "label": "Columns",
+        "valueType": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    ]
   }
 ]

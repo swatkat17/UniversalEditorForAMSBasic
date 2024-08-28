@@ -219,31 +219,26 @@
     "id": "table",
     "fields": [
       {
+        "component": "text",
+        "name": "title",
+        "value": "",
+        "label": "Table Title",
+        "valueType": "string"
+    },
+    {
         "component": "table",
-        "name": "rows",
-        "label": "Rows",
-        "valueType": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "cells": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          }
-        }
-      },
-      {
-        "component": "table",
-        "name": "columns",
-        "label": "Columns",
-        "valueType": "array",
-        "items": {
-          "type": "string"
-        }
-      }
+        "name": "tableData",
+        "value": {
+            "header": ["Column 1", "Column 2", "Column 3"],
+            "rows": [
+                ["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3"],
+                ["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3"],
+                ["Row 3, Col 1", "Row 3, Col 2", "Row 3, Col 3"]
+            ]
+        },
+        "label": "Table Data",
+        "valueType": "object"
+    }
     ]
   }  
 ]
